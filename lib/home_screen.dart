@@ -3,7 +3,7 @@ import 'details_screen.dart';
 
 
 class HomeScreen extends StatelessWidget {
-
+  
   final List<Map<String, String>> recipes = [
   {
     'name': 'Spaghetti Bolognese',
@@ -16,7 +16,10 @@ class HomeScreen extends StatelessWidget {
     'ingredients': 'Chicken, Curry Powder, Coconut Milk, Onion',
     'instructions': 'Cook chicken, add curry powder and coconut milk.'
   },
+  
   ];
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +37,7 @@ class HomeScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => details_screen(
+                  builder: (context) => DetailsScreen(
                     recipe: recipes[index]
                   ),
                 )
