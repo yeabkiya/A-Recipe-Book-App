@@ -11,11 +11,18 @@ class DetailsScreen extends StatelessWidget{
       appBar: AppBar(
         title: Text(recipe['name']!),
       ),
-      body: Padding(
+      body: 
+      SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Image.asset(
+              recipe['image']!,
+              width: double.infinity,
+              height: 300,
+              fit: BoxFit.contain,
+            ),
             const Text(
               'Ingredients: ',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
