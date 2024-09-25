@@ -5,16 +5,22 @@ class HomeScreen extends StatelessWidget {
   // Sample list of recipes
   final List<Map<String, String>> recipes = [
     {
-      'name': 'Spaghetti Bolognese',
-      'ingredients': 'Pasta, Beef, Tomato Sauce, Onion, Garlic',
-      'instructions': 'Boil pasta, cook beef, mix with sauce.',
-      'image': 'images/SpagBolo.png',
-    },
-    {
-      'name': 'Chicken Curry',
-      'ingredients': 'Chicken, Curry Powder, Coconut Milk, Onion',
-      'instructions': 'Cook chicken, add curry powder and coconut milk.',
-      'image': 'images/chickcurr.png',
+      'name': 'Baked Denver Omelet',
+      'ingredients': '''2 tablespoons butter
+      ½ onion, chopped
+      ½ green bell pepper, chopped
+      1 cup chopped cooked ham
+      8 eggs
+      ¼ cup milk
+      ½ cup shredded Cheddar cheese
+      salt and ground black pepper to taste''',
+      'instructions': '''Preheat oven to 400 degrees F (200 degrees C). Grease a 10-inch round baking dish.
+      Melt butter in a large skillet over medium heat; cook and stir onion and bell pepper until softened, 
+      about 5 minutes. Stir in ham and continue cooking until heated through, 5 minutes more.
+      Beat eggs and milk in a large bowl. Stir in Cheddar cheese and ham mixture; season with salt and black pepper. 
+      Pour mixture into prepared baking dish.
+      Bake in preheated oven until eggs are browned and puffy, about 25 minutes. Serve warm.''',
+      'image': 'images/bakeddenveromelet.png',
     },
 
     {
@@ -81,7 +87,7 @@ class HomeScreen extends StatelessWidget {
       1 teaspoon minced garlic
       2 tablespoons soy sauce
       2 tablespoons sesame seeds, toasted''',
-      'instruction': '''Gather all ingredients.
+      'instructions': '''Gather all ingredients.
       Heat vegetable oil in a large wok or skillet over medium-high heat; 
       cook and stir beef until browned, 3 to 4 minutes.
       Move beef to the side of the wok and add broccoli, bell pepper,
